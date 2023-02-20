@@ -49,7 +49,7 @@ const Navbar = () => {
           <div className="collapse navbar-collapse " id="main">
             <div className="links-container">
 
-              <div className="links m-auto">
+              <div className="links ">
                 <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                   {navbarLinks.map((link, index) => (
                     <li key={index} className={`nav-item `}>
@@ -84,7 +84,7 @@ const Navbar = () => {
                   </div>
                 </div>
 
-                <div className="search-btn me-3">
+                <div className="search-btn">
                   <Link href="/">
                     <div className="icon-container">
                       <Image

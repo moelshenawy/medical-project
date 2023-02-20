@@ -5,9 +5,11 @@ import Footer from './../Footer/index';
 export default function Layout({ children }) {
   return (
     <>
-      <Navbar />
-      <main>{children}</main>
-      <Footer />
+      <div className="Layout">
+        <Navbar />
+        <main>{children}</main>
+        <Footer />
+      </div>
     </>
   )
 }

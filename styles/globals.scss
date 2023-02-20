@@ -34,10 +34,6 @@ ul {
   padding-bottom: 18.4px;
   box-shadow: 0px 3px 6px #0000000d;
 
-  @media screen and (max-width: 450px) {
-    padding-top: 20px;
-    padding-bottom: 15px;
-  }
   .container {
     // margin-top: 60px;
     .logo {
@@ -71,7 +67,7 @@ ul {
       outline: none;
 
       svg {
-        color: var(--main-color);
+        color: #00465c;
         width: 30px;
         height: 30px;
 
@@ -91,6 +87,11 @@ ul {
       align-items: center;
       justify-content: space-between;
       width: 100%;
+
+      @media screen and (max-width: 992px) {
+        margin-top: 30px;
+        justify-content: space-around;
+      }
 
       .links {
         .navbar-nav {
@@ -128,7 +129,7 @@ ul {
       @media screen and (max-width: 992px) {
         height: 111px;
         flex-direction: column;
-        align-items: center;
+        align-items: flex-start;
         justify-content: space-between;
       }
 
@@ -136,6 +137,11 @@ ul {
         display: flex;
         // align-items: center;
         margin-right: 16px;
+
+        @media screen and (max-width: 992px) {
+          margin-right: 0px;
+          width: 100%;
+        }
 
         .img-container {
           margin-right: 4px;
@@ -172,6 +178,9 @@ ul {
 
           .icon-container {
             margin-right: 7.2px;
+            @media screen and (max-width: 992px) {
+              margin-right: 0px;
+            }
             img {
               width: 18.89px;
               height: 18.89px;
@@ -267,6 +276,10 @@ ul {
     height: 56px;
     margin-bottom: 65px;
 
+    @media screen and (max-width: 750px) {
+      width: 100%;
+    }
+
     select {
       width: 100%;
       height: 100%;
@@ -300,12 +313,22 @@ ul {
     justify-content: space-between;
     flex-wrap: wrap;
 
+    @media screen and (max-width: 750px) {
+      align-items: flex-start;
+      justify-content: center;
+    }
+
     .box {
       width: 344px;
       margin-top: 35px;
       box-shadow: 0px 3px 6px #00000029;
       border-radius: 0px 0px 5px 5px;
       padding-bottom: 25px;
+
+      @media screen and (max-width: 992px) {
+        width: 316px;
+        height: 590px;
+      }
 
       .img-container {
         width: 100%;
@@ -440,12 +463,22 @@ footer {
       align-items: center;
       justify-content: space-between;
 
+      @media screen and (max-width: 992px) {
+        flex-direction: column;
+      }
+
       .links-container {
         margin-bottom: 42px;
         .boxes {
           display: flex;
           align-items: center;
           justify-content: space-between;
+
+          @media screen and (max-width: 992px) {
+            justify-content: flex-start;
+            flex-wrap: wrap;
+          }
+
           .box {
             margin-right: 47px;
             .box-title {
