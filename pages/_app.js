@@ -1,10 +1,13 @@
-import React from "react";
+import { useEffect } from "react";
 import { Layout } from "../components";
 import "../styles/globals.scss";
 import "bootstrap/dist/css/bootstrap.css";
-import "bootstrap/dist/js/bootstrap.bundle";
 
 function MyApp({ Component, pageProps }) {
+  useEffect(() => {
+    require("bootstrap/dist/js/bootstrap.bundle.min.js");
+  }, []);
+
   return (
     <Layout>
       <Component {...pageProps} />
